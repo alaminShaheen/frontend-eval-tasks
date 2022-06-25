@@ -1,9 +1,9 @@
 import React, { MouseEvent, useState } from "react";
-import { HistoryStackElement } from "models/UndoableCounter/HistoryStackElement";
-import { HistoryStack } from "components/UndoableCounter/HistoryStack";
-import "components/UndoableCounter/UndoableCounterContainer.css";
+import { HistoryStackElement } from "models/UndoAbleCounter/HistoryStackElement";
+import { HistoryStack } from "components/UndoAbleCounter/HistoryStack";
+import "components/UndoAbleCounter/UndoAbleCounterContainer.css";
 
-export const UndoableCounterContainer = () => {
+export const UndoAbleCounterContainer = () => {
     const [historyStack, setHistoryStack] = useState<HistoryStackElement[]>([]);
     const [undoStack, setRedoStack] = useState<HistoryStackElement[]>([]);
 

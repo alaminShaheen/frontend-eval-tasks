@@ -1,12 +1,12 @@
-import React from 'react';
-import {Header} from "components/Header";
-import {UndoableCounterContainer} from "components/UndoableCounter/UndoableCounterContainer";
+import React from "react";
+import { Header } from "components/Header";
+import { UndoAbleCounterContainer } from "components/UndoAbleCounter/UndoAbleCounterContainer";
 
-export const UndoableCounter = () => {
+export const UndoAbleCounter = () => {
     return (
-	<div>
-	    <Header title="Undoable Counter"/>
-	    <UndoableCounterContainer/>
-	</div>
+        <div>
+            <Header title="Undoable Counter" />
+            <UndoAbleCounterContainer />
+        </div>
     );
 };

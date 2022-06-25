@@ -1,4 +1,4 @@
-import { HistoryStackElement } from "models/UndoableCounter/HistoryStackElement";
+import { HistoryStackElement } from "models/UndoAbleCounter/HistoryStackElement";
 import React, { useEffect, useRef } from "react";
 
 type HistoryStackProps = {
