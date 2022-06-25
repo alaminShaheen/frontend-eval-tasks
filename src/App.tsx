@@ -1,14 +1,11 @@
 import React from 'react';
+import {UndoableCounter} from "pages/UndoableCounter";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        Hello
-      </header>
-    </div>
-  );
+export function App() {
+    return (
+	<div className="App">
+	    <UndoableCounter/>
+	</div>
+    );
 }
-
-export default App;
