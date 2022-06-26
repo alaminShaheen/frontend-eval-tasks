@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ROUTES } from "constants/Routes";
 import { Home } from "pages/Home";
 import { ShoppingCart } from "pages/ShoppingCart";
-import { UndoAbleCounter } from "pages/UndoAbleCounter";
 
+import { UndoAbleCounter } from "pages/UndoableCounter";
 import "./App.css";
 
 export function App() {
