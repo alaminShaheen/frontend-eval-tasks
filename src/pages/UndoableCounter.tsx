@@ -6,7 +6,7 @@ import { UndoAbleCounterContainer } from "components/UndoAbleCounter/UndoAbleCou
 export const UndoAbleCounter = () => {
     return (
         <div>
-            <Header title="Undoable Counter" />
+            <Header title="UndoAble Counter" />
             <UndoAbleCounterContainer />
         </div>
     );
