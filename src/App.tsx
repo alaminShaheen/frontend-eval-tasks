@@ -5,8 +5,8 @@ import { ROUTES } from "constants/Routes";
 import { Home } from "pages/Home";
 import { ShoppingCart } from "pages/ShoppingCart";
 
-import { UndoAbleCounter } from "pages/UndoableCounter";
 import "./App.css";
+import { UndoAbleCounter } from "pages/UndoAbleCounter";
 
 export function App() {
     return (
