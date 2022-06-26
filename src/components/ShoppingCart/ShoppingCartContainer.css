@@ -1,0 +1,50 @@
+.suggestions {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    max-width: 400px;
+}
+
+.suggestion {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background-color: grey;
+    color: white;
+}
+
+.not-found {
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.shopping-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.list-item .list-checkbox {
+    margin-top: 7px;
+}
+
+.list-item .remove {
+    color: red;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: larger;
+}
