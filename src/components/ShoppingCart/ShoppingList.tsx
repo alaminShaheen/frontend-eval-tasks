@@ -1,5 +1,6 @@
-import { ShoppingItem } from "models/ShoppingCart/ShoppingItem";
 import React from "react";
+
+import { ShoppingItem } from "models/ShoppingCart/ShoppingItem";
 
 type ShoppingListProps = {
     shoppingItems: Map<string, ShoppingItem>;
@@ -7,7 +8,7 @@ type ShoppingListProps = {
     onCheckBoxChange: (item: string, checked: boolean) => void;
 };
 
-const ShoppingList = (props: ShoppingListProps) => {
+export const ShoppingList = (props: ShoppingListProps) => {
     const { shoppingItems, onRemoveItem, onCheckBoxChange } = props;
     return (
         <div className="shopping-list">
@@ -34,5 +35,3 @@ const ShoppingList = (props: ShoppingListProps) => {
         </div>
     );
 };
-
-export default ShoppingList;

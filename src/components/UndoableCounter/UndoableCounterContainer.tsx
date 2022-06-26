@@ -1,6 +1,8 @@
 import React, { MouseEvent, useState } from "react";
-import { HistoryStackElement } from "models/UndoAbleCounter/HistoryStackElement";
+
 import { HistoryStack } from "components/UndoAbleCounter/HistoryStack";
+import { HistoryStackElement } from "models/UndoAbleCounter/HistoryStackElement";
+
 import "components/UndoAbleCounter/UndoAbleCounterContainer.css";
 
 export const UndoAbleCounterContainer = () => {
@@ -11,9 +13,7 @@ export const UndoAbleCounterContainer = () => {
         const amount = +(event.currentTarget.textContent || 0);
         setRedoStack([]);
         const currentCount =
-            historyStack.length > 0
-                ? historyStack[historyStack.length - 1].to
-                : 0;
+            historyStack.length > 0 ? historyStack[historyStack.length - 1].to : 0;
         const newStackElement = new HistoryStackElement(
             amount,
             currentCount,
@@ -52,9 +52,7 @@ export const UndoAbleCounterContainer = () => {
             <div className="undo-redo-section">
                 <button
                     className="btn btn-undo"
-                    disabled={
-                        historyStack.length === 0 || undoStack.length === 50
-                    }
+                    disabled={historyStack.length === 0 || undoStack.length === 50}
                     onClick={undo}
                 >
                     Undo
@@ -67,9 +65,7 @@ export const UndoAbleCounterContainer = () => {
                     Redo
                 </button>
                 <button
-                    disabled={
-                        historyStack.length === 0 && undoStack.length === 0
-                    }
+                    disabled={historyStack.length === 0 && undoStack.length === 0}
                     className="btn btn-redo"
                     onClick={clear}
                 >
@@ -91,9 +87,7 @@ export const UndoAbleCounterContainer = () => {
                 </div>
 
                 <div className="counter-output">
-                    {historyStack.length > 0
-                        ? historyStack[historyStack.length - 1].to
-                        : 0}
+                    {historyStack.length > 0 ? historyStack[historyStack.length - 1].to : 0}
                 </div>
 
                 <div className="incremental-buttons">

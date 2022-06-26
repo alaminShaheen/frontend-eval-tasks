@@ -1,7 +1,9 @@
 import React, { ChangeEvent, useCallback, useState } from "react";
-import { ShoppingItem } from "models/ShoppingCart/ShoppingItem";
-import ShoppingList from "components/ShoppingCart/ShoppingList";
+
+import { ShoppingList } from "components/ShoppingCart/ShoppingList";
 import { Suggestions } from "components/ShoppingCart/Suggestions";
+import { ShoppingItem } from "models/ShoppingCart/ShoppingItem";
+
 import "components/ShoppingCart/ShoppingCartContainer.css";
 
 export const ShoppingCartContainer = () => {
@@ -19,8 +21,6 @@ export const ShoppingCartContainer = () => {
         }
 
         try {
-            console.log("hello");
-
             const data = await fetch(
                 `https://api.frontendeval.com/fake/food/${event.target.value}`,
             );
