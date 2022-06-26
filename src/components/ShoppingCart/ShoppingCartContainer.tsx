@@ -7,16 +7,14 @@ import { ShoppingItem } from "models/ShoppingCart/ShoppingItem";
 import "components/ShoppingCart/ShoppingCartContainer.css";
 
 export const ShoppingCartContainer = () => {
-    const [shoppingList, setShoppingList] = useState<Map<string, ShoppingItem>>(
-        new Map(),
-    );
+    const [shoppingList, setShoppingList] = useState<Map<string, ShoppingItem>>(new Map());
     const [searchTerm, setSearchTerm] = useState("");
     const [suggestions, setSuggestions] = useState<string[]>([]);
 
     const fetchProducts = async (event: ChangeEvent<HTMLInputElement>) => {
         setSearchTerm(event.target.value);
 
-        if (!searchTerm) {
+        if (!event.target.value) {
             setSuggestions([]);
         }
 
